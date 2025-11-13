@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU3S-final</title>
+
+    <!-- bootstrap cdn -->
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+</head>
+
+<header>
+    <div class="header-b">
+        <div class="container-xxl">
+            <div class="header-bg">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/imgs/main-logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                        <button class="close-btn d-lg-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 241.171 241.171">
+                                <path
+                                    d="M138.138,120.754l99.118-98.576c4.752-4.704,4.752-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0   l-99.033,98.492L21.095,3.699c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l99.876,99.888L3.555,220.497  c-4.74,4.704-4.74,12.319,0,17.011c4.74,4.704,12.439,4.704,17.179,0l100.152-99.599l99.551,99.563   c4.74,4.752,12.439,4.752,17.179,0c4.74-4.764,4.74-12.475,0-17.227L138.138,120.754z">
+                                </path>
+                            </svg>
+                        </button>
+                        <ul class="navbar-nav">
+                            <li class="menu-item current-menu-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="javascript:void(0);">Services</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="auto-car.html">
+                                            Auto Car
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="market_cafe.html">
+                                           Market Cafe
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="wash.html">
+                                            Car Wash
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="javascript:void(0);">Gallery</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="javascript:void(0);">Blog</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contect.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-media px-5 d-none d-lg-block">
+                        <ul class="d-flex gap-2 align-items-center">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 3.40625C9 3.40625 10.625 5.03125 10.625 7C10.625 9 9 10.5938 7.03125 10.5938C5.03125 10.5938 3.4375 9 3.4375 7C3.4375 5.03125 5.03125 3.40625 7.03125 3.40625ZM7.03125 9.34375C8.3125 9.34375 9.34375 8.3125 9.34375 7C9.34375 5.71875 8.3125 4.6875 7.03125 4.6875C5.71875 4.6875 4.6875 5.71875 4.6875 7C4.6875 8.3125 5.75 9.34375 7.03125 9.34375ZM11.5938 3.28125C11.5938 2.8125 11.2188 2.4375 10.75 2.4375C10.2812 2.4375 9.90625 2.8125 9.90625 3.28125C9.90625 3.75 10.2812 4.125 10.75 4.125C11.2188 4.125 11.5938 3.75 11.5938 3.28125ZM13.9688 4.125C14.0312 5.28125 14.0312 8.75 13.9688 9.90625C13.9062 11.0312 13.6562 12 12.8438 12.8438C12.0312 13.6562 11.0312 13.9062 9.90625 13.9688C8.75 14.0312 5.28125 14.0312 4.125 13.9688C3 13.9062 2.03125 13.6562 1.1875 12.8438C0.375 12 0.125 11.0312 0.0625 9.90625C0 8.75 0 5.28125 0.0625 4.125C0.125 3 0.375 2 1.1875 1.1875C2.03125 0.375 3 0.125 4.125 0.0625C5.28125 0 8.75 0 9.90625 0.0625C11.0312 0.125 12.0312 0.375 12.8438 1.1875C13.6562 2 13.9062 3 13.9688 4.125ZM12.4688 11.125C12.8438 10.2188 12.75 8.03125 12.75 7C12.75 6 12.8438 3.8125 12.4688 2.875C12.2188 2.28125 11.75 1.78125 11.1562 1.5625C10.2188 1.1875 8.03125 1.28125 7.03125 1.28125C6 1.28125 3.8125 1.1875 2.90625 1.5625C2.28125 1.8125 1.8125 2.28125 1.5625 2.875C1.1875 3.8125 1.28125 6 1.28125 7C1.28125 8.03125 1.1875 10.2188 1.5625 11.125C1.8125 11.75 2.28125 12.2188 2.90625 12.4688C3.8125 12.8438 6 12.75 7.03125 12.75C8.03125 12.75 10.2188 12.8438 11.1562 12.4688C11.75 12.2188 12.25 11.75 12.4688 11.125Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <svg width="15" height="15" viewBox="0 0 14 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.125 15H0.21875V5.65625H3.125V15ZM1.65625 4.40625C0.75 4.40625 0 3.625 0 2.6875C0 1.40625 1.375 0.59375 2.5 1.25C3.03125 1.53125 3.34375 2.09375 3.34375 2.6875C3.34375 3.625 2.59375 4.40625 1.65625 4.40625ZM13.9688 15H11.0938V10.4688C11.0938 9.375 11.0625 8 9.5625 8C8.0625 8 7.84375 9.15625 7.84375 10.375V15H4.9375V5.65625H7.71875V6.9375H7.75C8.15625 6.21875 9.09375 5.4375 10.5 5.4375C13.4375 5.4375 14 7.375 14 9.875V15H13.9688Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <svg width="15" height="15" viewBox="0 0 10 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.3779 5.15765L8.74191 0H7.94474L5.02377 4.47832L2.6908 0H0L3.52791 6.77201L0 12.1806H0.797208L3.88183 7.45135L6.34561 12.1806H9.03642L5.3777 5.15765H5.3779ZM4.28601 6.83167L3.92856 6.15733L1.08445 0.79154H2.30892L4.60415 5.12191L4.9616 5.79625L7.94512 11.4251H6.72066L4.28601 6.83193V6.83167Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <svg width="15" height="15" viewBox="0 0 10 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.71875 10H6.375V17H3.25V10H0.6875V7.125H3.25V4.90625C3.25 2.40625 4.75 1 7.03125 1C8.125 1 9.28125 1.21875 9.28125 1.21875V3.6875H8C6.75 3.6875 6.375 4.4375 6.375 5.25V7.125H9.15625L8.71875 10Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-btn">
+                        <a href="javascript:void(0);" class="btn btn-primary ">Timings : 8am - 10pm</a>
+                    </div>
+                    <button class="navbar-toggler d-lg-none custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                            <g class="menu-outline">
+                                <path fill="#fff" fill-rule="evenodd"
+                                    d="M3 7a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1"
+                                    class="Vector 38 (Stroke)" clip-rule="evenodd" />
+                            </g>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="home-banner d-flex align-items-center justify-content-center text-center position-relative"
+    style="background-image: url(assets/imgs/home-banner.png); background-size: cover; background-repeat: no-repeat;">
+    <div class="container-xxl">
+        <div class="home-desc">
+            <h1>Experience the <span>Ultimate Car Care</span> at NU3S</h1>
+            <!-- Large image: visible on md (≥576px) and up -->
+            <div class="img d-none d-sm-block">
+                <h3>Get Touchless Car Wash, Spacious Cafe & Express Auto Care</h3>
+                <img src="assets/imgs/home-shap-img.png" alt="Large screen shape image">
+            </div>
+            <!-- Small image: visible only on small screens (<576px) -->
+            <div class="img d-block d-sm-none">
+                <img src="assets/imgs/sm-home-shap-img.png" alt="Small screen shape image">
+                <h3>Get Touchless Car Wash, Spacious Cafe & Express Auto Care</h3>
+            </div>
+            <div class="lable">
+                <p class="d-inline-flex align-items-center gap-2 text-white rounded fw-semibold">
+                    <span>
+                        <svg width="28" height="35" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 17.5C14.9625 17.5 15.7865 17.1573 16.4719 16.4719C17.1573 15.7865 17.5 14.9625 17.5 14C17.5 13.0375 17.1573 12.2135 16.4719 11.5281C15.7865 10.8427 14.9625 10.5 14 10.5C13.0375 10.5 12.2135 10.8427 11.5281 11.5281C10.8427 12.2135 10.5 13.0375 10.5 14C10.5 14.9625 10.8427 15.7865 11.5281 16.4719C12.2135 17.1573 13.0375 17.5 14 17.5ZM14 30.3625C17.5583 27.0958 20.1979 24.1281 21.9188 21.4594C23.6396 18.7906 24.5 16.4208 24.5 14.35C24.5 11.1708 23.4865 8.56771 21.4594 6.54062C19.4323 4.51354 16.9458 3.5 14 3.5C11.0542 3.5 8.56771 4.51354 6.54062 6.54062C4.51354 8.56771 3.5 11.1708 3.5 14.35C3.5 16.4208 4.36042 18.7906 6.08125 21.4594C7.80208 24.1281 10.4417 27.0958 14 30.3625ZM14 35C9.30417 31.0042 5.79688 27.2927 3.47813 23.8656C1.15938 20.4385 0 17.2667 0 14.35C0 9.975 1.40729 6.48958 4.22188 3.89375C7.03646 1.29792 10.2958 0 14 0C17.7042 0 20.9635 1.29792 23.7781 3.89375C26.5927 6.48958 28 9.975 28 14.35C28 17.2667 26.8406 20.4385 24.5219 23.8656C22.2031 27.2927 18.6958 31.0042 14 35Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    Location: 130-29 Merrick Blvd, Jamaica, NY 11434
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-us ptb-80">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- ABOUT TITLE -->
+            <div class="col-lg-10 page-title text-center">
+                <div class="text-center gap-3 d-flex align-items-center justify-content-center">
+                    <svg width="38" height="2" viewBox="0 0 38 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="1" x2="36.5761" y2="1" stroke="#F05622" stroke-width="2" stroke-linecap="round"
+                            stroke-dasharray="4 4" />
+                    </svg>
+                    <h4>ABOUT US</h4>
+                    <svg width="38" height="2" viewBox="0 0 38 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="1" x2="36.5761" y2="1" stroke="#F05622" stroke-width="2" stroke-linecap="round"
+                            stroke-dasharray="4 4" />
+                    </svg>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="about-desc text-center">
+                    <p>We built NU3S with one goal: to offer a service you’ll love coming back to. It's not just about a
+                        car care <br><b>— it’s about the experience.</b></p>
+                    <p>Your Own Neighborhood Pitstop for Touchless Car Wash, Xpress Auto Care and a cozy Cafe to create
+                        a space where taking care of your car also means taking care of yourself.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center mt-3">
+            <!-- IMAGE 1 -->
+            <div class="col-lg-5 col-md-6">
+                <div class="about-img">
+                    <img src="assets/imgs/about-1.png" alt="">
+                    <img src="assets/imgs/ho-ab-1.png" class="img-fluid hover-img" alt="">
+                    <div class="about-overlay">
+                        <p>Relax in Jamaica’s coziest cafe while we give your car top-notch care.</p>
+                        <a href="#">KNOW MORE >></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE 2 -->
+            <div class="col-lg-5 col-md-6">
+                <div class="about-img">
+                    <img src="assets/imgs/about-2.png" alt="">
+                    <img src="assets/imgs/ho-ab-2.png" class="img-fluid hover-img" alt="">
+                    <div class="about-overlay">
+                        <p>Your one-stop destination for oil changes, brakes, engine service, tires, and complete
+                            auto
+                            care.</p>
+                        <a href="#">KNOW MORE >></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE 3 -->
+            <div class="col-lg-5 col-md-6">
+                <div class="about-img">
+                    <img src="assets/imgs/about-3.png" alt="">
+                    <img src="assets/imgs/ho-ab-3.png" class="img-fluid hover-img" alt="">
+                    <div class="about-overlay">
+                        <p>Charge your electric vehicle while enjoying a coffee in our cafe. Stay tuned for this
+                            exciting new service!</p>
+                        <a href="#">KNOW MORE >></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE 4 -->
+            <div class="col-lg-5 col-md-6">
+                <div class="about-img">
+                    <img src="assets/imgs/about-4.png" alt="">
+                    <img src="assets/imgs/ho-ab-4.png" class="img-fluid hover-img" alt="">
+                    <div class="about-overlay">
+                        <p>Watch your car go from dirty to sparkling with our advanced touchless car wash
+                            technology.
+                        </p>
+                        <a href="#">KNOW MORE >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose tb-border ptb-80" style="background-color: rgba(240, 87, 36, 1); position: relative;">
+    <div class="container">
+        <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="logo text-center">
+                    <img src="assets/imgs/Red and White logo.png" alt="NU3S Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <div class="why-desc">
+                    <div class="sm-center gap-3 d-flex align-items-center pb-4">
+                        <svg width="38" height="2" viewBox="0 0 38 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="36.5761" y2="1" stroke="rgba(46, 46, 46, 1)" stroke-width="2"
+                                stroke-linecap="round" stroke-dasharray="4 4" />
+                        </svg>
+                        <h4>WHY CHOOSE NU3S</h4>
+                        <svg width="38" height="2" viewBox="0 0 38 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="36.5761" y2="1" stroke="rgba(46, 46, 46, 1)" stroke-width="2"
+                                stroke-linecap="round" stroke-dasharray="4 4" />
+                        </svg>
+                    </div>
+                    <h2>The Only Place Where You and Your Car Are <br> <span>Taken Care Of.</span></h2>
+                    <p>At NU3S, your car gets washed, serviced, and repaired while you enjoy coffee, food, and a cozy
+                        lounge atmosphere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="place-refresh ptb-80 position-relative"
+    style="background-image: url('assets/imgs/Group\ 1.png'); background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="desc">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 page-title text-center">
+                    <div class=" text-center gap-3 d-flex align-items-center justify-content-center">
+                        <svg width="38" height="2" viewBox="0 0 38 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="36.5761" y2="1" stroke="#F05622" stroke-width="2"
+                                stroke-linecap="round" stroke-dasharray="4 4" />
+                        </svg>
+                        <h4>WHY WE’RE DIFFERENT</h4>
+                        <svg width="38" height="2" viewBox="0 0 38 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="36.5761" y2="1" stroke="#F05622" stroke-width="2"
+                                stroke-linecap="round" stroke-dasharray="4 4" />
+                        </svg>
+                    </div>
+                    <h2><span>Beyond a Car Wash </span> <br> Your place to Refresh and recharge.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between mt-5">
+            <div class="col-lg-3 col-md-6 col-sm-6 img text-center">
+                <img src="assets/imgs/place-1.png" alt="">
+                <h4>Spacious Café</h4>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 img text-center">
+                <img src="assets/imgs/place-2.png" alt="">
+                <h4>Clean Restrooms</h4>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 img text-center">
+                <img src="assets/imgs/place-3.png" alt="">
+                <h4>Ample Parking</h4>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 img text-center">
+                <img src="assets/imgs/place-4.png" alt="">
+                <h4>Speedy Assistance</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="customers-card ptb-80">
+    <div class="cards">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 page-title text-center">
+                <div class=" text-center gap-3 d-flex align-items-center justify-content-center">
+                    <svg width="38" height="2" viewBox="0 0 38 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="1" x2="36.5761" y2="1" stroke="#F05622" stroke-width="2" stroke-linecap="round"
+                            stroke-dasharray="4 4" />
+                    </svg>
+                    <h4>TESTIMONIALS</h4>
+                    <svg width="38" height="2" viewBox="0 0 38 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="1" x2="36.5761" y2="1" stroke="#F05622" stroke-width="2" stroke-linecap="round"
+                            stroke-dasharray="4 4" />
+                    </svg>
+                </div>
+                <h2>What our Customers say about <span>NU3S?</span></h2>
+            </div>
+        </div>
+        <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+                <!-- CARD 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <h6>Ralph Edwards</h6>
+                        <p>
+                            NU3S has redefined the car wash experience — spotless
+                            restrooms, friendly staff, & a car that looks brand new every
+                            time.
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="more">
+                                <svg width="33" height="25" viewBox="0 0 33 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.5 0.5V14.6719L27.9717 24.1436H22.0078L26.3799 15.002L26.7217 14.2861H19.3574V0.5L32.5 0.5ZM13.6426 0.5L13.6426 14.6719L9.11426 24.1436H3.15137L7.52246 15.002L7.86523 14.2861L0.5 14.2861L0.5 0.5L13.6426 0.5Z"
+                                        stroke="#F05622" />
+                                </svg>
+                            </div>
+                            <div class="reting">
+                                <svg width="80" height="17" viewBox="0 0 80 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9062 4.71875L16.375 5.375C16.75 5.4375 17.0625 5.6875 17.1875 6.0625C17.3125 6.40625 17.2188 6.8125 16.9375 7.0625L13.6875 10.2812L14.4688 14.8438C14.5312 15.2188 14.375 15.5938 14.0625 15.8125C13.75 16.0625 13.3438 16.0625 13 15.9062L9 13.75L4.96875 15.9062C4.65625 16.0625 4.21875 16.0625 3.9375 15.8125C3.625 15.5938 3.46875 15.2188 3.53125 14.8438L4.28125 10.2812L1.03125 7.0625C0.75 6.8125 0.65625 6.40625 0.78125 6.0625C0.90625 5.6875 1.21875 5.4375 1.59375 5.375L6.09375 4.71875L8.09375 0.5625C8.25 0.21875 8.59375 0 9 0C9.375 0 9.71875 0.21875 9.875 0.5625L11.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M27.6758 4.71875L32.1445 5.375C32.5195 5.4375 32.832 5.6875 32.957 6.0625C33.082 6.40625 32.9883 6.8125 32.707 7.0625L29.457 10.2812L30.2383 14.8438C30.3008 15.2188 30.1445 15.5938 29.832 15.8125C29.5195 16.0625 29.1133 16.0625 28.7695 15.9062L24.7695 13.75L20.7383 15.9062C20.4258 16.0625 19.9883 16.0625 19.707 15.8125C19.3945 15.5938 19.2383 15.2188 19.3008 14.8438L20.0508 10.2812L16.8008 7.0625C16.5195 6.8125 16.4258 6.40625 16.5508 6.0625C16.6758 5.6875 16.9883 5.4375 17.3633 5.375L21.8633 4.71875L23.8633 0.5625C24.0195 0.21875 24.3633 0 24.7695 0C25.1445 0 25.4883 0.21875 25.6445 0.5625L27.6758 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M43.4453 4.71875L47.9141 5.375C48.2891 5.4375 48.6016 5.6875 48.7266 6.0625C48.8516 6.40625 48.7578 6.8125 48.4766 7.0625L45.2266 10.2812L46.0078 14.8438C46.0703 15.2188 45.9141 15.5938 45.6016 15.8125C45.2891 16.0625 44.8828 16.0625 44.5391 15.9062L40.5391 13.75L36.5078 15.9062C36.1953 16.0625 35.7578 16.0625 35.4766 15.8125C35.1641 15.5938 35.0078 15.2188 35.0703 14.8438L35.8203 10.2812L32.5703 7.0625C32.2891 6.8125 32.1953 6.40625 32.3203 6.0625C32.4453 5.6875 32.7578 5.4375 33.1328 5.375L37.6328 4.71875L39.6328 0.5625C39.7891 0.21875 40.1328 0 40.5391 0C40.9141 0 41.2578 0.21875 41.4141 0.5625L43.4453 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M73.9062 4.71875L78.375 5.375C78.75 5.4375 79.0625 5.6875 79.1875 6.0625C79.3125 6.40625 79.2188 6.8125 78.9375 7.0625L75.6875 10.2812L76.4688 14.8438C76.5312 15.2188 76.375 15.5938 76.0625 15.8125C75.75 16.0625 75.3438 16.0625 75 15.9062L71 13.75L66.9688 15.9062C66.6562 16.0625 66.2188 16.0625 65.9375 15.8125C65.625 15.5938 65.4688 15.2188 65.5312 14.8438L66.2812 10.2812L63.0312 7.0625C62.75 6.8125 62.6562 6.40625 62.7812 6.0625C62.9062 5.6875 63.2188 5.4375 63.5938 5.375L68.0938 4.71875L70.0938 0.5625C70.25 0.21875 70.5938 0 71 0C71.375 0 71.7188 0.21875 71.875 0.5625L73.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M59.2168 4.71875L63.6855 5.375C64.0605 5.4375 64.373 5.6875 64.498 6.0625C64.623 6.40625 64.5293 6.8125 64.248 7.0625L60.998 10.2812L61.7793 14.8438C61.8418 15.2188 61.6855 15.5938 61.373 15.8125C61.0605 16.0625 60.6543 16.0625 60.3105 15.9062L56.3105 13.75L52.2793 15.9062C51.9668 16.0625 51.5293 16.0625 51.248 15.8125C50.9355 15.5938 50.7793 15.2188 50.8418 14.8438L51.5918 10.2812L48.3418 7.0625C48.0605 6.8125 47.9668 6.40625 48.0918 6.0625C48.2168 5.6875 48.5293 5.4375 48.9043 5.375L53.4043 4.71875L55.4043 0.5625C55.5605 0.21875 55.9043 0 56.3105 0C56.6855 0 57.0293 0.21875 57.1855 0.5625L59.2168 4.71875Z"
+                                        fill="#FFB124" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <h6>Marvin McKinney</h6>
+                        <p>
+                            I’ve tried many car washes in Queens & NU3S stands out as the
+                            best. I can enjoy coffee, use free Wi-Fi, and relax while my
+                            car gets spotless — all without wasting a minute!
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="more">
+                                <svg width="33" height="25" viewBox="0 0 33 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.5 0.5V14.6719L27.9717 24.1436H22.0078L26.3799 15.002L26.7217 14.2861H19.3574V0.5L32.5 0.5ZM13.6426 0.5L13.6426 14.6719L9.11426 24.1436H3.15137L7.52246 15.002L7.86523 14.2861L0.5 14.2861L0.5 0.5L13.6426 0.5Z"
+                                        stroke="#F05622" />
+                                </svg>
+                            </div>
+                            <div class="reting">
+                                <svg width="80" height="17" viewBox="0 0 80 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9062 4.71875L16.375 5.375C16.75 5.4375 17.0625 5.6875 17.1875 6.0625C17.3125 6.40625 17.2188 6.8125 16.9375 7.0625L13.6875 10.2812L14.4688 14.8438C14.5312 15.2188 14.375 15.5938 14.0625 15.8125C13.75 16.0625 13.3438 16.0625 13 15.9062L9 13.75L4.96875 15.9062C4.65625 16.0625 4.21875 16.0625 3.9375 15.8125C3.625 15.5938 3.46875 15.2188 3.53125 14.8438L4.28125 10.2812L1.03125 7.0625C0.75 6.8125 0.65625 6.40625 0.78125 6.0625C0.90625 5.6875 1.21875 5.4375 1.59375 5.375L6.09375 4.71875L8.09375 0.5625C8.25 0.21875 8.59375 0 9 0C9.375 0 9.71875 0.21875 9.875 0.5625L11.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M27.6758 4.71875L32.1445 5.375C32.5195 5.4375 32.832 5.6875 32.957 6.0625C33.082 6.40625 32.9883 6.8125 32.707 7.0625L29.457 10.2812L30.2383 14.8438C30.3008 15.2188 30.1445 15.5938 29.832 15.8125C29.5195 16.0625 29.1133 16.0625 28.7695 15.9062L24.7695 13.75L20.7383 15.9062C20.4258 16.0625 19.9883 16.0625 19.707 15.8125C19.3945 15.5938 19.2383 15.2188 19.3008 14.8438L20.0508 10.2812L16.8008 7.0625C16.5195 6.8125 16.4258 6.40625 16.5508 6.0625C16.6758 5.6875 16.9883 5.4375 17.3633 5.375L21.8633 4.71875L23.8633 0.5625C24.0195 0.21875 24.3633 0 24.7695 0C25.1445 0 25.4883 0.21875 25.6445 0.5625L27.6758 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M43.4453 4.71875L47.9141 5.375C48.2891 5.4375 48.6016 5.6875 48.7266 6.0625C48.8516 6.40625 48.7578 6.8125 48.4766 7.0625L45.2266 10.2812L46.0078 14.8438C46.0703 15.2188 45.9141 15.5938 45.6016 15.8125C45.2891 16.0625 44.8828 16.0625 44.5391 15.9062L40.5391 13.75L36.5078 15.9062C36.1953 16.0625 35.7578 16.0625 35.4766 15.8125C35.1641 15.5938 35.0078 15.2188 35.0703 14.8438L35.8203 10.2812L32.5703 7.0625C32.2891 6.8125 32.1953 6.40625 32.3203 6.0625C32.4453 5.6875 32.7578 5.4375 33.1328 5.375L37.6328 4.71875L39.6328 0.5625C39.7891 0.21875 40.1328 0 40.5391 0C40.9141 0 41.2578 0.21875 41.4141 0.5625L43.4453 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M73.9062 4.71875L78.375 5.375C78.75 5.4375 79.0625 5.6875 79.1875 6.0625C79.3125 6.40625 79.2188 6.8125 78.9375 7.0625L75.6875 10.2812L76.4688 14.8438C76.5312 15.2188 76.375 15.5938 76.0625 15.8125C75.75 16.0625 75.3438 16.0625 75 15.9062L71 13.75L66.9688 15.9062C66.6562 16.0625 66.2188 16.0625 65.9375 15.8125C65.625 15.5938 65.4688 15.2188 65.5312 14.8438L66.2812 10.2812L63.0312 7.0625C62.75 6.8125 62.6562 6.40625 62.7812 6.0625C62.9062 5.6875 63.2188 5.4375 63.5938 5.375L68.0938 4.71875L70.0938 0.5625C70.25 0.21875 70.5938 0 71 0C71.375 0 71.7188 0.21875 71.875 0.5625L73.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M59.2168 4.71875L63.6855 5.375C64.0605 5.4375 64.373 5.6875 64.498 6.0625C64.623 6.40625 64.5293 6.8125 64.248 7.0625L60.998 10.2812L61.7793 14.8438C61.8418 15.2188 61.6855 15.5938 61.373 15.8125C61.0605 16.0625 60.6543 16.0625 60.3105 15.9062L56.3105 13.75L52.2793 15.9062C51.9668 16.0625 51.5293 16.0625 51.248 15.8125C50.9355 15.5938 50.7793 15.2188 50.8418 14.8438L51.5918 10.2812L48.3418 7.0625C48.0605 6.8125 47.9668 6.40625 48.0918 6.0625C48.2168 5.6875 48.5293 5.4375 48.9043 5.375L53.4043 4.71875L55.4043 0.5625C55.5605 0.21875 55.9043 0 56.3105 0C56.6855 0 57.0293 0.21875 57.1855 0.5625L59.2168 4.71875Z"
+                                        fill="#FFB124" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <h6>Devon Lane</h6>
+                        <p>
+                            Every visit to NU3S impresses me. They make my car spotless
+                            while checking tires and topping up fluids — a trusted,
+                            premium auto care experience.
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="more">
+                                <svg width="33" height="25" viewBox="0 0 33 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.5 0.5V14.6719L27.9717 24.1436H22.0078L26.3799 15.002L26.7217 14.2861H19.3574V0.5L32.5 0.5ZM13.6426 0.5L13.6426 14.6719L9.11426 24.1436H3.15137L7.52246 15.002L7.86523 14.2861L0.5 14.2861L0.5 0.5L13.6426 0.5Z"
+                                        stroke="#F05622" />
+                                </svg>
+                            </div>
+                            <div class="reting">
+                                <svg width="80" height="17" viewBox="0 0 80 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9062 4.71875L16.375 5.375C16.75 5.4375 17.0625 5.6875 17.1875 6.0625C17.3125 6.40625 17.2188 6.8125 16.9375 7.0625L13.6875 10.2812L14.4688 14.8438C14.5312 15.2188 14.375 15.5938 14.0625 15.8125C13.75 16.0625 13.3438 16.0625 13 15.9062L9 13.75L4.96875 15.9062C4.65625 16.0625 4.21875 16.0625 3.9375 15.8125C3.625 15.5938 3.46875 15.2188 3.53125 14.8438L4.28125 10.2812L1.03125 7.0625C0.75 6.8125 0.65625 6.40625 0.78125 6.0625C0.90625 5.6875 1.21875 5.4375 1.59375 5.375L6.09375 4.71875L8.09375 0.5625C8.25 0.21875 8.59375 0 9 0C9.375 0 9.71875 0.21875 9.875 0.5625L11.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M27.6758 4.71875L32.1445 5.375C32.5195 5.4375 32.832 5.6875 32.957 6.0625C33.082 6.40625 32.9883 6.8125 32.707 7.0625L29.457 10.2812L30.2383 14.8438C30.3008 15.2188 30.1445 15.5938 29.832 15.8125C29.5195 16.0625 29.1133 16.0625 28.7695 15.9062L24.7695 13.75L20.7383 15.9062C20.4258 16.0625 19.9883 16.0625 19.707 15.8125C19.3945 15.5938 19.2383 15.2188 19.3008 14.8438L20.0508 10.2812L16.8008 7.0625C16.5195 6.8125 16.4258 6.40625 16.5508 6.0625C16.6758 5.6875 16.9883 5.4375 17.3633 5.375L21.8633 4.71875L23.8633 0.5625C24.0195 0.21875 24.3633 0 24.7695 0C25.1445 0 25.4883 0.21875 25.6445 0.5625L27.6758 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M43.4453 4.71875L47.9141 5.375C48.2891 5.4375 48.6016 5.6875 48.7266 6.0625C48.8516 6.40625 48.7578 6.8125 48.4766 7.0625L45.2266 10.2812L46.0078 14.8438C46.0703 15.2188 45.9141 15.5938 45.6016 15.8125C45.2891 16.0625 44.8828 16.0625 44.5391 15.9062L40.5391 13.75L36.5078 15.9062C36.1953 16.0625 35.7578 16.0625 35.4766 15.8125C35.1641 15.5938 35.0078 15.2188 35.0703 14.8438L35.8203 10.2812L32.5703 7.0625C32.2891 6.8125 32.1953 6.40625 32.3203 6.0625C32.4453 5.6875 32.7578 5.4375 33.1328 5.375L37.6328 4.71875L39.6328 0.5625C39.7891 0.21875 40.1328 0 40.5391 0C40.9141 0 41.2578 0.21875 41.4141 0.5625L43.4453 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M73.9062 4.71875L78.375 5.375C78.75 5.4375 79.0625 5.6875 79.1875 6.0625C79.3125 6.40625 79.2188 6.8125 78.9375 7.0625L75.6875 10.2812L76.4688 14.8438C76.5312 15.2188 76.375 15.5938 76.0625 15.8125C75.75 16.0625 75.3438 16.0625 75 15.9062L71 13.75L66.9688 15.9062C66.6562 16.0625 66.2188 16.0625 65.9375 15.8125C65.625 15.5938 65.4688 15.2188 65.5312 14.8438L66.2812 10.2812L63.0312 7.0625C62.75 6.8125 62.6562 6.40625 62.7812 6.0625C62.9062 5.6875 63.2188 5.4375 63.5938 5.375L68.0938 4.71875L70.0938 0.5625C70.25 0.21875 70.5938 0 71 0C71.375 0 71.7188 0.21875 71.875 0.5625L73.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M59.2168 4.71875L63.6855 5.375C64.0605 5.4375 64.373 5.6875 64.498 6.0625C64.623 6.40625 64.5293 6.8125 64.248 7.0625L60.998 10.2812L61.7793 14.8438C61.8418 15.2188 61.6855 15.5938 61.373 15.8125C61.0605 16.0625 60.6543 16.0625 60.3105 15.9062L56.3105 13.75L52.2793 15.9062C51.9668 16.0625 51.5293 16.0625 51.248 15.8125C50.9355 15.5938 50.7793 15.2188 50.8418 14.8438L51.5918 10.2812L48.3418 7.0625C48.0605 6.8125 47.9668 6.40625 48.0918 6.0625C48.2168 5.6875 48.5293 5.4375 48.9043 5.375L53.4043 4.71875L55.4043 0.5625C55.5605 0.21875 55.9043 0 56.3105 0C56.6855 0 57.0293 0.21875 57.1855 0.5625L59.2168 4.71875Z"
+                                        fill="#FFB124" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <h6>Brooklyn Simmons</h6>
+                        <p>
+                            Every visit to NU3S impresses me. They make my car spotless while checking tires and topping
+                            up fluids — a trusted, premium auto care experience.
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="more">
+                                <svg width="33" height="25" viewBox="0 0 33 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.5 0.5V14.6719L27.9717 24.1436H22.0078L26.3799 15.002L26.7217 14.2861H19.3574V0.5L32.5 0.5ZM13.6426 0.5L13.6426 14.6719L9.11426 24.1436H3.15137L7.52246 15.002L7.86523 14.2861L0.5 14.2861L0.5 0.5L13.6426 0.5Z"
+                                        stroke="#F05622" />
+                                </svg>
+                            </div>
+                            <div class="reting">
+                                <svg width="80" height="17" viewBox="0 0 80 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9062 4.71875L16.375 5.375C16.75 5.4375 17.0625 5.6875 17.1875 6.0625C17.3125 6.40625 17.2188 6.8125 16.9375 7.0625L13.6875 10.2812L14.4688 14.8438C14.5312 15.2188 14.375 15.5938 14.0625 15.8125C13.75 16.0625 13.3438 16.0625 13 15.9062L9 13.75L4.96875 15.9062C4.65625 16.0625 4.21875 16.0625 3.9375 15.8125C3.625 15.5938 3.46875 15.2188 3.53125 14.8438L4.28125 10.2812L1.03125 7.0625C0.75 6.8125 0.65625 6.40625 0.78125 6.0625C0.90625 5.6875 1.21875 5.4375 1.59375 5.375L6.09375 4.71875L8.09375 0.5625C8.25 0.21875 8.59375 0 9 0C9.375 0 9.71875 0.21875 9.875 0.5625L11.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M27.6758 4.71875L32.1445 5.375C32.5195 5.4375 32.832 5.6875 32.957 6.0625C33.082 6.40625 32.9883 6.8125 32.707 7.0625L29.457 10.2812L30.2383 14.8438C30.3008 15.2188 30.1445 15.5938 29.832 15.8125C29.5195 16.0625 29.1133 16.0625 28.7695 15.9062L24.7695 13.75L20.7383 15.9062C20.4258 16.0625 19.9883 16.0625 19.707 15.8125C19.3945 15.5938 19.2383 15.2188 19.3008 14.8438L20.0508 10.2812L16.8008 7.0625C16.5195 6.8125 16.4258 6.40625 16.5508 6.0625C16.6758 5.6875 16.9883 5.4375 17.3633 5.375L21.8633 4.71875L23.8633 0.5625C24.0195 0.21875 24.3633 0 24.7695 0C25.1445 0 25.4883 0.21875 25.6445 0.5625L27.6758 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M43.4453 4.71875L47.9141 5.375C48.2891 5.4375 48.6016 5.6875 48.7266 6.0625C48.8516 6.40625 48.7578 6.8125 48.4766 7.0625L45.2266 10.2812L46.0078 14.8438C46.0703 15.2188 45.9141 15.5938 45.6016 15.8125C45.2891 16.0625 44.8828 16.0625 44.5391 15.9062L40.5391 13.75L36.5078 15.9062C36.1953 16.0625 35.7578 16.0625 35.4766 15.8125C35.1641 15.5938 35.0078 15.2188 35.0703 14.8438L35.8203 10.2812L32.5703 7.0625C32.2891 6.8125 32.1953 6.40625 32.3203 6.0625C32.4453 5.6875 32.7578 5.4375 33.1328 5.375L37.6328 4.71875L39.6328 0.5625C39.7891 0.21875 40.1328 0 40.5391 0C40.9141 0 41.2578 0.21875 41.4141 0.5625L43.4453 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M73.9062 4.71875L78.375 5.375C78.75 5.4375 79.0625 5.6875 79.1875 6.0625C79.3125 6.40625 79.2188 6.8125 78.9375 7.0625L75.6875 10.2812L76.4688 14.8438C76.5312 15.2188 76.375 15.5938 76.0625 15.8125C75.75 16.0625 75.3438 16.0625 75 15.9062L71 13.75L66.9688 15.9062C66.6562 16.0625 66.2188 16.0625 65.9375 15.8125C65.625 15.5938 65.4688 15.2188 65.5312 14.8438L66.2812 10.2812L63.0312 7.0625C62.75 6.8125 62.6562 6.40625 62.7812 6.0625C62.9062 5.6875 63.2188 5.4375 63.5938 5.375L68.0938 4.71875L70.0938 0.5625C70.25 0.21875 70.5938 0 71 0C71.375 0 71.7188 0.21875 71.875 0.5625L73.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M59.2168 4.71875L63.6855 5.375C64.0605 5.4375 64.373 5.6875 64.498 6.0625C64.623 6.40625 64.5293 6.8125 64.248 7.0625L60.998 10.2812L61.7793 14.8438C61.8418 15.2188 61.6855 15.5938 61.373 15.8125C61.0605 16.0625 60.6543 16.0625 60.3105 15.9062L56.3105 13.75L52.2793 15.9062C51.9668 16.0625 51.5293 16.0625 51.248 15.8125C50.9355 15.5938 50.7793 15.2188 50.8418 14.8438L51.5918 10.2812L48.3418 7.0625C48.0605 6.8125 47.9668 6.40625 48.0918 6.0625C48.2168 5.6875 48.5293 5.4375 48.9043 5.375L53.4043 4.71875L55.4043 0.5625C55.5605 0.21875 55.9043 0 56.3105 0C56.6855 0 57.0293 0.21875 57.1855 0.5625L59.2168 4.71875Z"
+                                        fill="#FFB124" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <h6>Leslie Alexander</h6>
+                        <p>
+                            The best part about NU3S? Their quick service and friendly
+                            team. I’m always out in under 20 minutes with a sparkling car!
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="more">
+                                <svg width="33" height="25" viewBox="0 0 33 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.5 0.5V14.6719L27.9717 24.1436H22.0078L26.3799 15.002L26.7217 14.2861H19.3574V0.5L32.5 0.5ZM13.6426 0.5L13.6426 14.6719L9.11426 24.1436H3.15137L7.52246 15.002L7.86523 14.2861L0.5 14.2861L0.5 0.5L13.6426 0.5Z"
+                                        stroke="#F05622" />
+                                </svg>
+                            </div>
+                            <div class="reting">
+                                <svg width="80" height="17" viewBox="0 0 80 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9062 4.71875L16.375 5.375C16.75 5.4375 17.0625 5.6875 17.1875 6.0625C17.3125 6.40625 17.2188 6.8125 16.9375 7.0625L13.6875 10.2812L14.4688 14.8438C14.5312 15.2188 14.375 15.5938 14.0625 15.8125C13.75 16.0625 13.3438 16.0625 13 15.9062L9 13.75L4.96875 15.9062C4.65625 16.0625 4.21875 16.0625 3.9375 15.8125C3.625 15.5938 3.46875 15.2188 3.53125 14.8438L4.28125 10.2812L1.03125 7.0625C0.75 6.8125 0.65625 6.40625 0.78125 6.0625C0.90625 5.6875 1.21875 5.4375 1.59375 5.375L6.09375 4.71875L8.09375 0.5625C8.25 0.21875 8.59375 0 9 0C9.375 0 9.71875 0.21875 9.875 0.5625L11.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M27.6758 4.71875L32.1445 5.375C32.5195 5.4375 32.832 5.6875 32.957 6.0625C33.082 6.40625 32.9883 6.8125 32.707 7.0625L29.457 10.2812L30.2383 14.8438C30.3008 15.2188 30.1445 15.5938 29.832 15.8125C29.5195 16.0625 29.1133 16.0625 28.7695 15.9062L24.7695 13.75L20.7383 15.9062C20.4258 16.0625 19.9883 16.0625 19.707 15.8125C19.3945 15.5938 19.2383 15.2188 19.3008 14.8438L20.0508 10.2812L16.8008 7.0625C16.5195 6.8125 16.4258 6.40625 16.5508 6.0625C16.6758 5.6875 16.9883 5.4375 17.3633 5.375L21.8633 4.71875L23.8633 0.5625C24.0195 0.21875 24.3633 0 24.7695 0C25.1445 0 25.4883 0.21875 25.6445 0.5625L27.6758 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M43.4453 4.71875L47.9141 5.375C48.2891 5.4375 48.6016 5.6875 48.7266 6.0625C48.8516 6.40625 48.7578 6.8125 48.4766 7.0625L45.2266 10.2812L46.0078 14.8438C46.0703 15.2188 45.9141 15.5938 45.6016 15.8125C45.2891 16.0625 44.8828 16.0625 44.5391 15.9062L40.5391 13.75L36.5078 15.9062C36.1953 16.0625 35.7578 16.0625 35.4766 15.8125C35.1641 15.5938 35.0078 15.2188 35.0703 14.8438L35.8203 10.2812L32.5703 7.0625C32.2891 6.8125 32.1953 6.40625 32.3203 6.0625C32.4453 5.6875 32.7578 5.4375 33.1328 5.375L37.6328 4.71875L39.6328 0.5625C39.7891 0.21875 40.1328 0 40.5391 0C40.9141 0 41.2578 0.21875 41.4141 0.5625L43.4453 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M73.9062 4.71875L78.375 5.375C78.75 5.4375 79.0625 5.6875 79.1875 6.0625C79.3125 6.40625 79.2188 6.8125 78.9375 7.0625L75.6875 10.2812L76.4688 14.8438C76.5312 15.2188 76.375 15.5938 76.0625 15.8125C75.75 16.0625 75.3438 16.0625 75 15.9062L71 13.75L66.9688 15.9062C66.6562 16.0625 66.2188 16.0625 65.9375 15.8125C65.625 15.5938 65.4688 15.2188 65.5312 14.8438L66.2812 10.2812L63.0312 7.0625C62.75 6.8125 62.6562 6.40625 62.7812 6.0625C62.9062 5.6875 63.2188 5.4375 63.5938 5.375L68.0938 4.71875L70.0938 0.5625C70.25 0.21875 70.5938 0 71 0C71.375 0 71.7188 0.21875 71.875 0.5625L73.9062 4.71875Z"
+                                        fill="#FFB124" />
+                                    <path
+                                        d="M59.2168 4.71875L63.6855 5.375C64.0605 5.4375 64.373 5.6875 64.498 6.0625C64.623 6.40625 64.5293 6.8125 64.248 7.0625L60.998 10.2812L61.7793 14.8438C61.8418 15.2188 61.6855 15.5938 61.373 15.8125C61.0605 16.0625 60.6543 16.0625 60.3105 15.9062L56.3105 13.75L52.2793 15.9062C51.9668 16.0625 51.5293 16.0625 51.248 15.8125C50.9355 15.5938 50.7793 15.2188 50.8418 14.8438L51.5918 10.2812L48.3418 7.0625C48.0605 6.8125 47.9668 6.40625 48.0918 6.0625C48.2168 5.6875 48.5293 5.4375 48.9043 5.375L53.4043 4.71875L55.4043 0.5625C55.5605 0.21875 55.9043 0 56.3105 0C56.6855 0 57.0293 0.21875 57.1855 0.5625L59.2168 4.71875Z"
+                                        fill="#FFB124" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<section class="location position-relative">
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.7113670754484!2d-73.76474812415877!3d40.680328171398344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c267f19ee6949f%3A0xa1c2a7031ad9f81f!2sNU3S%20-%20Car%20Wash%20%7C%20Cafe%20%7C%20Auto%20Care!5e0!3m2!1sen!2sin!4v1762495414294!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="marq-line">
+        <div class="no-1">
+            <div class="scroll-banner">
+                <div class="scroll-track" id="scrollTrack">
+                    <span>Xpress Auto Care</span>
+                    <span>Car Wash</span>
+                    <span>EV Super Charge</span>
+                    <span>Detailing</span>
+                    <span>Xpress Auto Care</span>
+                    <span>Car Wash</span>
+                    <span>EV Super Charge</span>
+                    <span>Detailing</span>
+                </div>
+            </div>
+            <div class="scroll-banner-sec">
+                <div class="scroll-track" id="scrollTrack">
+                    <span>Xpress Auto Care</span>
+                    <span>Car Wash</span>
+                    <span>EV Super Charge</span>
+                    <span>Detailing</span>
+                    <span>Xpress Auto Care</span>
+                    <span>Car Wash</span>
+                    <span>EV Super Charge</span>
+                    <span>Detailing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer-banner position-relative">
+    <!-- Desktop Banner (visible ≥576px) -->
+    <div class="background footer-desk-banner d-none d-sm-block">
+        <img src="assets/imgs/footer_main_banner.png" alt="Desktop Banner">
+    </div>
+
+    <!-- Mobile Banner (visible <576px) -->
+    <div class="background footer-mob-banner d-block d-sm-none">
+        <img src="assets/imgs/footer_main_banner_sm.png" alt="Mobile Banner" class="img-fluid w-100">
+    </div>
+
+    <div class="service-desc text-center">
+        <div class="container mt-5">
+            <h4>Drive In Today <span class="d-block d-sm-inline">- Expert Car Care Is Here!</span></h4>
+            <h6>We’re at 130-29 Merrick Blvd, Jamaica, NY 11434</h6>
+            <p>- easy to find, impossible to forget.</p>
+        </div>
+        <div class="main-button mt-3">
+            <a href="#"><svg width="46" height="28" viewBox="0 0 46 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M35.6671 14.5072C36.0576 14.1166 36.0576 13.4835 35.6671 13.0929L29.3031 6.72898C28.9126 6.33846 28.2795 6.33846 27.8889 6.72898C27.4984 7.11951 27.4984 7.75267 27.8889 8.1432L33.5458 13.8001L27.8889 19.4569C27.4984 19.8474 27.4984 20.4806 27.8889 20.8711C28.2795 21.2616 28.9126 21.2616 29.3031 20.8711L35.6671 14.5072ZM0 13.8L-8.74228e-08 14.8L34.96 14.8001L34.96 13.8001L34.96 12.8001L8.74228e-08 12.8L0 13.8Z"
+                        fill="#232323" />
+                    <circle cx="32.2004" cy="13.8001" r="12.8" stroke="#232323" stroke-width="2" />
+                </svg> VISIT NU3S NOW</a>
+        </div>
+    </div>
+    <div class="rode">
+        <div class="car">
+            <img src="assets/imgs/car.png" alt="">
+        </div>
+    </div>
+</section>
+
+<footer style="background-color: rgba(35, 35, 35, 1);">
+    <div class="container ptb-80">
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-lg-3 col-sm-12">
+                <div class="logo">
+                    <img src="assets/imgs/main-logo.png" alt="">
+                    <p>We treat your car like ours, with attention to detail and expert care in every service.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3">
+                <div class="footer-menu">
+                    <h6>Services</h6>
+                    <ul>
+                        <li>
+                            <a href="wash.html">Car Wash</a>
+                        </li>
+                        <li>
+                            <a href="market_cafe.html">Cafe</a>
+                        </li>
+                        <li>
+                            <a href="auto-car.html">Auto Care</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3">
+                <div class="footer-menu">
+                    <h6>Contact Us</h6>
+                    <ul>
+                        <li>
+                            <a href="contect.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h6>Get in touch</h6>
+                <p>Questions or Feedback? We’d love to hear from you</p>
+                <p><b>Email: marketing@nu3s.com</b></p>
+            </div>
+            <div class="col-lg-12 social-media-ic d-block d-sm-none">
+                <div class="d-flex gap-4 justify-content-between">
+                    <a href="#">
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.0439 0C24.905 0 32.0888 7.05457 32.0889 15.7568C32.0889 24.4591 24.905 31.5137 16.0439 31.5137C7.18308 31.5134 0 24.459 0 15.7568C4.74942e-05 7.05472 7.18311 0.000244741 16.0439 0ZM16.0439 7.35352C13.7211 7.35352 13.4292 7.36351 12.5166 7.4043C11.6061 7.44526 10.9843 7.58627 10.4404 7.79395C9.87762 8.00859 9.39946 8.29639 8.92383 8.76367C8.44799 9.23069 8.15576 9.69952 7.93652 10.252C7.72438 10.7865 7.58007 11.3977 7.53906 12.292C7.49825 13.1881 7.48731 13.4749 7.4873 15.7568C7.4873 18.0392 7.4977 18.3253 7.53906 19.2217C7.58097 20.116 7.72517 20.7265 7.93652 21.2607C8.15526 21.8135 8.44802 22.2829 8.92383 22.75C9.39909 23.2172 9.87628 23.5051 10.4385 23.7197C10.9829 23.9275 11.6058 24.0694 12.5166 24.1104C13.4289 24.1511 13.7208 24.1611 16.0439 24.1611C18.3681 24.1611 18.6595 24.1511 19.5723 24.1104C20.4828 24.0694 21.1051 23.9274 21.6494 23.7197C22.2119 23.5051 22.6887 23.2172 23.1641 22.75C23.6401 22.2829 23.9331 21.8133 24.1523 21.2607C24.3626 20.7264 24.507 20.1156 24.5498 19.2217C24.5908 18.3253 24.6016 18.0392 24.6016 15.7568C24.6016 13.4748 24.5908 13.1883 24.5498 12.292C24.507 11.3973 24.3627 10.7863 24.1523 10.252C23.9331 9.69929 23.64 9.23074 23.1641 8.76367C22.6881 8.2963 22.2127 8.00839 21.6494 7.79395C21.1039 7.58613 20.4813 7.44527 19.5703 7.4043C18.6579 7.36352 18.3671 7.35352 16.0439 7.35352Z"
+                                fill="white" />
+                            <path
+                                d="M15.2773 8.86755C15.5051 8.8672 15.7595 8.86755 16.0449 8.86755C18.3295 8.86755 18.6008 8.87612 19.5029 8.91638C20.3372 8.95385 20.7902 9.09042 21.0918 9.20544C21.4911 9.35776 21.7759 9.54022 22.0752 9.83435C22.3746 10.1284 22.5604 10.4081 22.7158 10.8002C22.8329 11.0961 22.9728 11.5413 23.0107 12.3607C23.0517 13.2463 23.0605 13.5128 23.0605 15.7552C23.0605 17.9978 23.0517 18.264 23.0107 19.1498C22.9726 19.9691 22.8329 20.4144 22.7158 20.7103C22.5608 21.1023 22.3746 21.3813 22.0752 21.6752C21.7757 21.9693 21.4913 22.1518 21.0918 22.3041C20.7905 22.4196 20.3371 22.5557 19.5029 22.5931C18.601 22.6334 18.3295 22.642 16.0449 22.642C13.7607 22.642 13.4896 22.6334 12.5879 22.5931C11.7541 22.5553 11.3008 22.4191 10.999 22.3041C10.5997 22.1518 10.3141 21.9692 10.0146 21.6752C9.71518 21.3811 9.52947 21.1016 9.37402 20.7094C9.2569 20.4135 9.11707 19.9682 9.0791 19.1488C9.03812 18.2633 9.03027 17.9969 9.03027 15.7533C9.03027 13.5091 9.0381 13.2437 9.0791 12.3578C9.11727 11.539 9.25694 11.0944 9.37402 10.7982C9.52912 10.406 9.71515 10.1256 10.0146 9.83142C10.3141 9.53735 10.5997 9.35516 10.999 9.20251C11.3007 9.087 11.754 8.9501 12.5879 8.91248C13.377 8.87748 13.6831 8.86735 15.2773 8.8656V8.86755ZM16.0449 11.4418C13.6183 11.442 11.6514 13.374 11.6514 15.7572C11.6515 18.1403 13.6183 20.0714 16.0449 20.0717C18.4717 20.0717 20.4394 18.1405 20.4395 15.7572C20.4395 13.3739 18.4718 11.4418 16.0449 11.4418ZM20.5078 10.2679C19.9904 10.3196 19.5861 10.749 19.5859 11.2709C19.5859 11.8276 20.0464 12.2797 20.6133 12.2797C21.1801 12.2795 21.6396 11.8275 21.6396 11.2709C21.6395 10.7143 21.18 10.2632 20.6133 10.2631L20.5078 10.2679Z"
+                                fill="white" />
+                            <path
+                                d="M16.0448 12.9557C17.62 12.9557 18.8971 14.2098 18.8971 15.7569C18.8971 17.3039 17.62 18.5582 16.0448 18.5582C14.4694 18.5582 13.1924 17.3039 13.1924 15.7569C13.1924 14.2098 14.4694 12.9557 16.0448 12.9557Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#">
+
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M32.0888 15.7569C32.0888 7.05368 24.9064 0 16.0444 0C7.18238 0 0 7.05368 0 15.7569C0 23.6231 5.86624 30.1413 13.5375 31.323V20.3117H9.46369V15.7569H13.5375V12.2855C13.5375 8.33701 15.9316 6.15505 19.598 6.15505C21.3528 6.15505 23.1892 6.4628 23.1892 6.4628V10.3405H21.1648C19.1718 10.3405 18.5513 11.5561 18.5513 12.8025V15.7569H23.0012L22.2898 20.3117H18.5513V31.323C26.2226 30.1413 32.0888 23.6231 32.0888 15.7569Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.0439 0C24.905 0 32.0888 7.05457 32.0889 15.7568C32.0889 24.4591 24.905 31.5137 16.0439 31.5137C7.18308 31.5134 0 24.459 0 15.7568C4.74942e-05 7.05472 7.18311 0.000244741 16.0439 0ZM20.2646 12.7988C18.3344 12.7989 17.4699 13.8398 16.9873 14.5703V13.0508H13.3506C13.3985 14.0575 13.3506 23.7803 13.3506 23.7803H16.9873V17.7881C16.9873 17.4675 17.0113 17.1475 17.1074 16.918C17.3702 16.2774 17.9682 15.6143 18.9727 15.6143C20.2888 15.6143 20.8153 16.5976 20.8154 18.0391V23.7793H24.4512V17.6279C24.4512 14.3325 22.6573 12.7988 20.2646 12.7988ZM7.70215 23.7793H11.3389V13.0508H7.70215V23.7793ZM9.54492 7.87891C8.30115 7.87891 7.48742 8.67959 7.4873 9.73145C7.4873 10.7616 8.27647 11.5859 9.49707 11.5859H9.52051C10.7883 11.5859 11.5781 10.7616 11.5781 9.73145C11.5544 8.67972 10.7884 7.87911 9.54492 7.87891Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.0439 0C24.905 0 32.0888 7.05457 32.0889 15.7568C32.0889 24.4591 24.905 31.5137 16.0439 31.5137C7.18308 31.5134 0 24.459 0 15.7568C4.74942e-05 7.05472 7.18311 0.000244741 16.0439 0ZM16.0439 9.97949C15.9871 9.9795 10.6864 9.98122 9.3584 10.3398C8.62201 10.5383 8.04154 11.1237 7.84473 11.8662C7.4876 13.2111 7.4873 16.015 7.4873 16.0195C7.4873 16.0195 7.48731 18.8268 7.84473 20.1729C8.04154 20.9154 8.62201 21.5007 9.3584 21.6992C10.6864 22.0578 15.9871 22.0596 16.0439 22.0596C16.0439 22.0596 21.3957 22.0597 22.7305 21.6992C23.4669 21.5007 24.0473 20.9154 24.2441 20.1729C24.6016 18.8268 24.6016 16.0195 24.6016 16.0195C24.6016 16.015 24.6014 13.2111 24.2441 11.8662C24.0473 11.1237 23.4669 10.5383 22.7305 10.3398C21.3956 9.97925 16.0439 9.97949 16.0439 9.97949Z"
+                                fill="white" />
+                            <path d="M14.4404 18.9083V13.656L18.7189 16.2823L14.4404 18.9083Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="copy-right">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                        <p>© NU3S 2025 | All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                        <div class="privacy-link">
+                            <ul>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                        <div class="social-icon gap-4 justify-content-center d-none d-sm-flex">
+                            <a href="#">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0439 0C24.905 0 32.0888 7.05457 32.0889 15.7568C32.0889 24.4591 24.905 31.5137 16.0439 31.5137C7.18308 31.5134 0 24.459 0 15.7568C4.74942e-05 7.05472 7.18311 0.000244741 16.0439 0ZM16.0439 7.35352C13.7211 7.35352 13.4292 7.36351 12.5166 7.4043C11.6061 7.44526 10.9843 7.58627 10.4404 7.79395C9.87762 8.00859 9.39946 8.29639 8.92383 8.76367C8.44799 9.23069 8.15576 9.69952 7.93652 10.252C7.72438 10.7865 7.58007 11.3977 7.53906 12.292C7.49825 13.1881 7.48731 13.4749 7.4873 15.7568C7.4873 18.0392 7.4977 18.3253 7.53906 19.2217C7.58097 20.116 7.72517 20.7265 7.93652 21.2607C8.15526 21.8135 8.44802 22.2829 8.92383 22.75C9.39909 23.2172 9.87628 23.5051 10.4385 23.7197C10.9829 23.9275 11.6058 24.0694 12.5166 24.1104C13.4289 24.1511 13.7208 24.1611 16.0439 24.1611C18.3681 24.1611 18.6595 24.1511 19.5723 24.1104C20.4828 24.0694 21.1051 23.9274 21.6494 23.7197C22.2119 23.5051 22.6887 23.2172 23.1641 22.75C23.6401 22.2829 23.9331 21.8133 24.1523 21.2607C24.3626 20.7264 24.507 20.1156 24.5498 19.2217C24.5908 18.3253 24.6016 18.0392 24.6016 15.7568C24.6016 13.4748 24.5908 13.1883 24.5498 12.292C24.507 11.3973 24.3627 10.7863 24.1523 10.252C23.9331 9.69929 23.64 9.23074 23.1641 8.76367C22.6881 8.2963 22.2127 8.00839 21.6494 7.79395C21.1039 7.58613 20.4813 7.44527 19.5703 7.4043C18.6579 7.36352 18.3671 7.35352 16.0439 7.35352Z"
+                                        fill="white" />
+                                    <path
+                                        d="M15.2773 8.86755C15.5051 8.8672 15.7595 8.86755 16.0449 8.86755C18.3295 8.86755 18.6008 8.87612 19.5029 8.91638C20.3372 8.95385 20.7902 9.09042 21.0918 9.20544C21.4911 9.35776 21.7759 9.54022 22.0752 9.83435C22.3746 10.1284 22.5604 10.4081 22.7158 10.8002C22.8329 11.0961 22.9728 11.5413 23.0107 12.3607C23.0517 13.2463 23.0605 13.5128 23.0605 15.7552C23.0605 17.9978 23.0517 18.264 23.0107 19.1498C22.9726 19.9691 22.8329 20.4144 22.7158 20.7103C22.5608 21.1023 22.3746 21.3813 22.0752 21.6752C21.7757 21.9693 21.4913 22.1518 21.0918 22.3041C20.7905 22.4196 20.3371 22.5557 19.5029 22.5931C18.601 22.6334 18.3295 22.642 16.0449 22.642C13.7607 22.642 13.4896 22.6334 12.5879 22.5931C11.7541 22.5553 11.3008 22.4191 10.999 22.3041C10.5997 22.1518 10.3141 21.9692 10.0146 21.6752C9.71518 21.3811 9.52947 21.1016 9.37402 20.7094C9.2569 20.4135 9.11707 19.9682 9.0791 19.1488C9.03812 18.2633 9.03027 17.9969 9.03027 15.7533C9.03027 13.5091 9.0381 13.2437 9.0791 12.3578C9.11727 11.539 9.25694 11.0944 9.37402 10.7982C9.52912 10.406 9.71515 10.1256 10.0146 9.83142C10.3141 9.53735 10.5997 9.35516 10.999 9.20251C11.3007 9.087 11.754 8.9501 12.5879 8.91248C13.377 8.87748 13.6831 8.86735 15.2773 8.8656V8.86755ZM16.0449 11.4418C13.6183 11.442 11.6514 13.374 11.6514 15.7572C11.6515 18.1403 13.6183 20.0714 16.0449 20.0717C18.4717 20.0717 20.4394 18.1405 20.4395 15.7572C20.4395 13.3739 18.4718 11.4418 16.0449 11.4418ZM20.5078 10.2679C19.9904 10.3196 19.5861 10.749 19.5859 11.2709C19.5859 11.8276 20.0464 12.2797 20.6133 12.2797C21.1801 12.2795 21.6396 11.8275 21.6396 11.2709C21.6395 10.7143 21.18 10.2632 20.6133 10.2631L20.5078 10.2679Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.0448 12.9557C17.62 12.9557 18.8971 14.2098 18.8971 15.7569C18.8971 17.3039 17.62 18.5582 16.0448 18.5582C14.4694 18.5582 13.1924 17.3039 13.1924 15.7569C13.1924 14.2098 14.4694 12.9557 16.0448 12.9557Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32.0888 15.7569C32.0888 7.05368 24.9064 0 16.0444 0C7.18238 0 0 7.05368 0 15.7569C0 23.6231 5.86624 30.1413 13.5375 31.323V20.3117H9.46369V15.7569H13.5375V12.2855C13.5375 8.33701 15.9316 6.15505 19.598 6.15505C21.3528 6.15505 23.1892 6.4628 23.1892 6.4628V10.3405H21.1648C19.1718 10.3405 18.5513 11.5561 18.5513 12.8025V15.7569H23.0012L22.2898 20.3117H18.5513V31.323C26.2226 30.1413 32.0888 23.6231 32.0888 15.7569Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <a href="#">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0439 0C24.905 0 32.0888 7.05457 32.0889 15.7568C32.0889 24.4591 24.905 31.5137 16.0439 31.5137C7.18308 31.5134 0 24.459 0 15.7568C4.74942e-05 7.05472 7.18311 0.000244741 16.0439 0ZM20.2646 12.7988C18.3344 12.7989 17.4699 13.8398 16.9873 14.5703V13.0508H13.3506C13.3985 14.0575 13.3506 23.7803 13.3506 23.7803H16.9873V17.7881C16.9873 17.4675 17.0113 17.1475 17.1074 16.918C17.3702 16.2774 17.9682 15.6143 18.9727 15.6143C20.2888 15.6143 20.8153 16.5976 20.8154 18.0391V23.7793H24.4512V17.6279C24.4512 14.3325 22.6573 12.7988 20.2646 12.7988ZM7.70215 23.7793H11.3389V13.0508H7.70215V23.7793ZM9.54492 7.87891C8.30115 7.87891 7.48742 8.67959 7.4873 9.73145C7.4873 10.7616 8.27647 11.5859 9.49707 11.5859H9.52051C10.7883 11.5859 11.5781 10.7616 11.5781 9.73145C11.5544 8.67972 10.7884 7.87911 9.54492 7.87891Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0439 0C24.905 0 32.0888 7.05457 32.0889 15.7568C32.0889 24.4591 24.905 31.5137 16.0439 31.5137C7.18308 31.5134 0 24.459 0 15.7568C4.74942e-05 7.05472 7.18311 0.000244741 16.0439 0ZM16.0439 9.97949C15.9871 9.9795 10.6864 9.98122 9.3584 10.3398C8.62201 10.5383 8.04154 11.1237 7.84473 11.8662C7.4876 13.2111 7.4873 16.015 7.4873 16.0195C7.4873 16.0195 7.48731 18.8268 7.84473 20.1729C8.04154 20.9154 8.62201 21.5007 9.3584 21.6992C10.6864 22.0578 15.9871 22.0596 16.0439 22.0596C16.0439 22.0596 21.3957 22.0597 22.7305 21.6992C23.4669 21.5007 24.0473 20.9154 24.2441 20.1729C24.6016 18.8268 24.6016 16.0195 24.6016 16.0195C24.6016 16.015 24.6014 13.2111 24.2441 11.8662C24.0473 11.1237 23.4669 10.5383 22.7305 10.3398C21.3956 9.97925 16.0439 9.97949 16.0439 9.97949Z"
+                                        fill="white" />
+                                    <path d="M14.4404 18.9083V13.656L18.7189 16.2823L14.4404 18.9083Z" fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- js file link -->
+    <script src="assets/JS/index.js"></script>
+</body>
+
+</html>
